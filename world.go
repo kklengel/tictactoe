@@ -31,7 +31,7 @@ func (w *World) PlaceStone(player string, number int) error {
 
 func (w *World) placeStone(player string, number int) error {
 
-	if number < 0 || number > 9 {
+	if number < 1 || number > 9 {
 		return fmt.Errorf("%v is not a valid number to place", number)
 	}
 
